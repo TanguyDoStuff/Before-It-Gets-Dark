@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://desxofqu2nruq"]
+
+[ext_resource type="Texture2D" uid="uid://blk8dpf6nrdra" path="res://assets/char/overworld/Ermit/Ermit1.png" id="1_7lyiy"]
+[ext_resource type="Texture2D" uid="uid://ci4ka0uaon4oj" path="res://assets/char/overworld/Ermit/Ermit2.png" id="2_x1s8g"]
+[ext_resource type="Script" path="res://scenes/char/npc.gd" id="30_2xfdk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ue4yb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7lyiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_x1s8g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Ermit" type="AnimatedSprite3D"]
+billboard = 2
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_ue4yb")
+frame_progress = 0.252396
+script = ExtResource("30_2xfdk")

@@ -1,0 +1,134 @@
+[gd_scene load_steps=32 format=3 uid="uid://clsjbwbe1esds"]
+
+[ext_resource type="Texture2D" uid="uid://dy1ibn6lsbquw" path="res://assets/char/duck/duck0001.png" id="1_tpi61"]
+[ext_resource type="Texture2D" uid="uid://ceaxmcnia65be" path="res://assets/char/duck/duck0002.png" id="2_dwupu"]
+[ext_resource type="Script" path="res://scenes/char/npc.gd" id="3_bn7gb"]
+[ext_resource type="Texture2D" uid="uid://bsr4ya7u5ttej" path="res://assets/char/duck/duck0003.png" id="3_g42c0"]
+[ext_resource type="Texture2D" uid="uid://dtipuhc28w7xm" path="res://assets/char/duck/duck0004.png" id="4_pgmpr"]
+[ext_resource type="Texture2D" uid="uid://c54rmlm4t5q0n" path="res://assets/char/duck/duck0005.png" id="5_vb5yl"]
+[ext_resource type="Texture2D" uid="uid://cn1632g1ahcjb" path="res://assets/char/duck/duck0006.png" id="6_ufq7i"]
+[ext_resource type="Texture2D" uid="uid://c6ia5d5moqlae" path="res://assets/char/duck/duck0007.png" id="7_iasdh"]
+[ext_resource type="Texture2D" uid="uid://batvrrbhad76d" path="res://assets/char/duck/duck0008.png" id="8_bwfot"]
+[ext_resource type="Texture2D" uid="uid://dp4s3qtfenrfa" path="res://assets/char/duck/duck0009.png" id="9_grc35"]
+[ext_resource type="Texture2D" uid="uid://owqba4ci67ln" path="res://assets/char/duck/duck0010.png" id="10_8yl7n"]
+[ext_resource type="Texture2D" uid="uid://8nthspr3ffpj" path="res://assets/char/duck/duck0011.png" id="11_tvpa8"]
+[ext_resource type="Texture2D" uid="uid://cfjplmpr5nf1v" path="res://assets/char/duck/duck0012.png" id="12_tjdcm"]
+[ext_resource type="Texture2D" uid="uid://b2yjh25pp8748" path="res://assets/char/duck/duck0013.png" id="13_qgod3"]
+[ext_resource type="Texture2D" uid="uid://d4f6hqh7ijtde" path="res://assets/char/duck/duck0014.png" id="14_6klsw"]
+[ext_resource type="Texture2D" uid="uid://yjbjow6w88h7" path="res://assets/char/duck/duck0015.png" id="15_0xj5u"]
+[ext_resource type="Texture2D" uid="uid://jl7ynfk8vacd" path="res://assets/char/duck/duck0016.png" id="16_n6h7c"]
+[ext_resource type="Texture2D" uid="uid://878v7knbr20y" path="res://assets/char/duck/duck0017.png" id="17_rsnys"]
+[ext_resource type="Texture2D" uid="uid://5j2p3uwdgen5" path="res://assets/char/duck/duck0018.png" id="18_nxru4"]
+[ext_resource type="Texture2D" uid="uid://b3k4do2h4pxh8" path="res://assets/char/duck/duck0019.png" id="19_hcak4"]
+[ext_resource type="Texture2D" uid="uid://dmqp4d2ph5rh2" path="res://assets/char/duck/duck0020.png" id="20_8yd0k"]
+[ext_resource type="Texture2D" uid="uid://cjnqdpl1cpn5h" path="res://assets/char/duck/duck0021.png" id="21_320t5"]
+[ext_resource type="Texture2D" uid="uid://dcc1fmuhc748u" path="res://assets/char/duck/duck0022.png" id="22_a5tqp"]
+[ext_resource type="Texture2D" uid="uid://cqaqr7hg7m5g1" path="res://assets/char/duck/duck0023.png" id="23_cr0ig"]
+[ext_resource type="Texture2D" uid="uid://ciq6rc603cruy" path="res://assets/char/duck/duck0024.png" id="24_5mkyq"]
+[ext_resource type="Texture2D" uid="uid://b17s1vpk3afso" path="res://assets/char/duck/duck0025.png" id="25_lnkkc"]
+[ext_resource type="Texture2D" uid="uid://cfyx2cbolm5lq" path="res://assets/char/duck/duck0026.png" id="26_j3lql"]
+[ext_resource type="Texture2D" uid="uid://5u6cqufrr466" path="res://assets/char/duck/duck0027.png" id="27_gbcha"]
+[ext_resource type="Texture2D" uid="uid://dfrhdxsvbobp2" path="res://assets/char/duck/duck0028.png" id="28_q5huq"]
+[ext_resource type="Texture2D" uid="uid://q4tw1ubhapiv" path="res://assets/char/duck/duck0029.png" id="29_82fxq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ue4yb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_tpi61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_dwupu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_g42c0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pgmpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vb5yl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ufq7i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_iasdh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_bwfot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_grc35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8yl7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_tvpa8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_tjdcm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_qgod3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6klsw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_0xj5u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_n6h7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_rsnys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_nxru4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_hcak4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_8yd0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_320t5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_a5tqp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_cr0ig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_5mkyq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_lnkkc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_j3lql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_gbcha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_q5huq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_82fxq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[node name="Duck" type="AnimatedSprite3D"]
+billboard = 2
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_ue4yb")
+frame_progress = 0.770643
+script = ExtResource("3_bn7gb")

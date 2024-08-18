@@ -1,0 +1,142 @@
+[gd_scene load_steps=34 format=3 uid="uid://1uqtdvfri0i3"]
+
+[ext_resource type="Texture2D" uid="uid://h651rx2hpct8" path="res://assets/char/witch/Stimming/stimming0000.png" id="1_7fq65"]
+[ext_resource type="Texture2D" uid="uid://bt4jey4yssxnc" path="res://assets/char/witch/Stimming/stimming0001.png" id="2_y2s1u"]
+[ext_resource type="Script" path="res://scenes/char/npc.gd" id="3_3t0iq"]
+[ext_resource type="Texture2D" uid="uid://b2o86usn7m4aa" path="res://assets/char/witch/Stimming/stimming0002.png" id="3_4k5jl"]
+[ext_resource type="Texture2D" uid="uid://d0q64r1u21ih6" path="res://assets/char/witch/Stimming/stimming0003.png" id="4_2nc07"]
+[ext_resource type="Texture2D" uid="uid://u8hbuykoulwv" path="res://assets/char/witch/Stimming/stimming0004.png" id="5_iaq13"]
+[ext_resource type="Texture2D" uid="uid://gkf3ylvdc6ct" path="res://assets/char/witch/Stimming/stimming0005.png" id="6_wa4oh"]
+[ext_resource type="Texture2D" uid="uid://drufrgu4putl2" path="res://assets/char/witch/Stimming/stimming0006.png" id="7_h7xle"]
+[ext_resource type="Texture2D" uid="uid://bw560hhe38bxa" path="res://assets/char/witch/Stimming/stimming0007.png" id="8_km5vs"]
+[ext_resource type="Texture2D" uid="uid://30gkfyni4v1f" path="res://assets/char/witch/Stimming/stimming0008.png" id="9_1brto"]
+[ext_resource type="Texture2D" uid="uid://dxfcjm5bsvl7a" path="res://assets/char/witch/Stimming/stimming0009.png" id="10_vtlpj"]
+[ext_resource type="Texture2D" uid="uid://6apg0ufuinvf" path="res://assets/char/witch/Stimming/stimming0010.png" id="11_gepi8"]
+[ext_resource type="Texture2D" uid="uid://bawq3hg82p0gn" path="res://assets/char/witch/Stimming/stimming0011.png" id="12_qtljd"]
+[ext_resource type="Texture2D" uid="uid://c8qi2k1u5qud1" path="res://assets/char/witch/Stimming/stimming0012.png" id="13_ij8q6"]
+[ext_resource type="Texture2D" uid="uid://cey7i0p0csdw2" path="res://assets/char/witch/Stimming/stimming0013.png" id="14_e8asx"]
+[ext_resource type="Texture2D" uid="uid://dm2uwb5633f1u" path="res://assets/char/witch/Stimming/stimming0014.png" id="15_157kl"]
+[ext_resource type="Texture2D" uid="uid://du7apk21vdh82" path="res://assets/char/witch/Stimming/stimming0015.png" id="16_n5hto"]
+[ext_resource type="Texture2D" uid="uid://fxlfu8pe4u14" path="res://assets/char/witch/Stimming/stimming0016.png" id="17_lgool"]
+[ext_resource type="Texture2D" uid="uid://b8jiqgmo4o525" path="res://assets/char/witch/Stimming/stimming0017.png" id="18_l038e"]
+[ext_resource type="Texture2D" uid="uid://b5ry62py6np8p" path="res://assets/char/witch/Stimming/stimming0018.png" id="19_o3fnt"]
+[ext_resource type="Texture2D" uid="uid://tykl773qky83" path="res://assets/char/witch/Stimming/stimming0019.png" id="20_8ryfo"]
+[ext_resource type="Texture2D" uid="uid://do853vqqo5uf1" path="res://assets/char/witch/Stimming/stimming0020.png" id="21_1wctu"]
+[ext_resource type="Texture2D" uid="uid://l8m4p4hmy84d" path="res://assets/char/witch/Stimming/stimming0021.png" id="22_20c5q"]
+[ext_resource type="Texture2D" uid="uid://b4rx3vu1sovwq" path="res://assets/char/witch/Stimming/stimming0022.png" id="23_uiac5"]
+[ext_resource type="Texture2D" uid="uid://nsru6y3crqpx" path="res://assets/char/witch/Stimming/stimming0023.png" id="24_w5ipf"]
+[ext_resource type="Texture2D" uid="uid://bb12f8m60duyw" path="res://assets/char/witch/Stimming/stimming0024.png" id="25_pjfy2"]
+[ext_resource type="Texture2D" uid="uid://cxnvl60gryqmo" path="res://assets/char/witch/Stimming/stimming0025.png" id="26_sanh5"]
+[ext_resource type="Texture2D" uid="uid://khxue75xiy4w" path="res://assets/char/witch/Stimming/stimming0026.png" id="27_qgv6n"]
+[ext_resource type="Texture2D" uid="uid://bi20oxt300klk" path="res://assets/char/witch/Stimming/stimming0027.png" id="28_6ssib"]
+[ext_resource type="Texture2D" uid="uid://dj27y2yls877h" path="res://assets/char/witch/Stimming/stimming0028.png" id="29_wdits"]
+[ext_resource type="Texture2D" uid="uid://gm0fprheeo16" path="res://assets/char/witch/Stimming/stimming0029.png" id="30_raicj"]
+[ext_resource type="Texture2D" uid="uid://cuog7jdqotyhr" path="res://assets/char/witch/Stimming/stimming0030.png" id="31_a7jc3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_645ji"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7fq65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_y2s1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4k5jl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2nc07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_iaq13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wa4oh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_h7xle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_km5vs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1brto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_vtlpj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_gepi8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_qtljd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ij8q6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_e8asx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_157kl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_n5hto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_lgool")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_l038e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_o3fnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_8ryfo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_1wctu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_20c5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_uiac5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_w5ipf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_pjfy2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_sanh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_qgv6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_6ssib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_wdits")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_raicj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_a7jc3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[node name="Witch" type="AnimatedSprite3D"]
+billboard = 2
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_645ji")
+frame_progress = 0.917907
+script = ExtResource("3_3t0iq")

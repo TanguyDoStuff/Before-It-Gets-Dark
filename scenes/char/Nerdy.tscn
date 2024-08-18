@@ -1,0 +1,121 @@
+[gd_scene load_steps=12 format=3 uid="uid://dcn6x8kv616ui"]
+
+[ext_resource type="Texture2D" uid="uid://2mxekujqalgg" path="res://assets/char/overworld/Nerdy/nerdy0001.png" id="1_k60b7"]
+[ext_resource type="Texture2D" uid="uid://6mdsxf40oh58" path="res://assets/char/overworld/Nerdy/nerdy0002.png" id="2_ltrsl"]
+[ext_resource type="Texture2D" uid="uid://cupuuat8kdmp6" path="res://assets/char/overworld/Nerdy/nerdy0003.png" id="3_7d8ru"]
+[ext_resource type="Script" path="res://scenes/char/npc.gd" id="3_qo0l5"]
+[ext_resource type="Script" path="res://scenes/char/chess_minigame.gd" id="5_o2ces"]
+[ext_resource type="Texture2D" uid="uid://cu32rxqbcxqql" path="res://assets/chess/chessboard.png" id="5_xw84q"]
+[ext_resource type="AudioStream" uid="uid://bce1hfv0wwjjy" path="res://assets/dialogue/explosion.wav" id="6_e40yr"]
+[ext_resource type="PackedScene" uid="uid://ntwva3ytgjls" path="res://scenes/char/chesspiece.tscn" id="6_jrxru"]
+[ext_resource type="Texture2D" uid="uid://dv35xo8di804j" path="res://assets/chess/Turn/WhiteTurn1.png" id="6_kqkpt"]
+[ext_resource type="Texture2D" uid="uid://bp7tywuyc3ypo" path="res://assets/chess/pieces/bKing.png" id="7_njux3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1de8c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_k60b7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ltrsl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7d8ru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ltrsl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="Nerdy" type="AnimatedSprite3D"]
+billboard = 2
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_1de8c")
+frame_progress = 0.120759
+script = ExtResource("3_qo0l5")
+
+[node name="ChessMinigame" type="Node2D" parent="."]
+z_index = 100
+texture_filter = 1
+script = ExtResource("5_o2ces")
+
+[node name="SoundEffect" type="AudioStreamPlayer2D" parent="ChessMinigame"]
+stream = ExtResource("6_e40yr")
+volume_db = -10.0
+
+[node name="TurnAnnouncement" type="Sprite2D" parent="ChessMinigame"]
+visible = false
+z_index = 4095
+position = Vector2(194, 112)
+texture = ExtResource("6_kqkpt")
+
+[node name="Chessboard" type="Sprite2D" parent="ChessMinigame"]
+position = Vector2(192, 112)
+texture = ExtResource("5_xw84q")
+
+[node name="NerdPiece" type="Sprite2D" parent="ChessMinigame"]
+position = Vector2(207, 15)
+scale = Vector2(0.521739, 0.521739)
+texture = ExtResource("7_njux3")
+
+[node name="Chesspiece" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(93, 184)
+
+[node name="Chesspiece2" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(122, 184)
+
+[node name="Chesspiece3" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(150, 183)
+
+[node name="Chesspiece4" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(178, 183)
+
+[node name="Chesspiece5" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(206, 183)
+
+[node name="Chesspiece6" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(233, 183)
+
+[node name="Chesspiece7" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(262, 183)
+
+[node name="Chesspiece8" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(290, 184)
+
+[node name="Chesspiece9" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(291, 212)
+pieceType = "Rook"
+
+[node name="Chesspiece10" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(263, 212)
+pieceType = "Knight"
+
+[node name="Chesspiece11" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(235, 212)
+pieceType = "Bishop"
+
+[node name="Chesspiece12" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(205, 211)
+pieceType = "King"
+
+[node name="Chesspiece13" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(178, 212)
+pieceType = "Queen"
+
+[node name="Chesspiece14" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(151, 212)
+pieceType = "Bishop"
+
+[node name="Chesspiece15" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(123, 212)
+pieceType = "Knight"
+
+[node name="Chesspiece16" parent="ChessMinigame" instance=ExtResource("6_jrxru")]
+position = Vector2(94, 211)
+pieceType = "Rook"
+
+[connection signal="finished" from="ChessMinigame/SoundEffect" to="ChessMinigame" method="_on_sound_effect_finished"]

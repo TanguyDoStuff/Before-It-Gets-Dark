@@ -1,0 +1,138 @@
+[gd_scene load_steps=15 format=3 uid="uid://75m4hojf20j5"]
+
+[ext_resource type="Script" path="res://scenes/game.gd" id="1_66dk3"]
+[ext_resource type="AudioStream" uid="uid://dtxqawxt7sayb" path="res://assets/music/going_up_loop.mp3" id="1_qyfpa"]
+[ext_resource type="Texture2D" uid="uid://b6cj4on1gj4rf" path="res://assets/overlay/overlay1.png" id="2_fxrjb"]
+[ext_resource type="Texture2D" uid="uid://bn4nrror07107" path="res://assets/overlay/overlay2.png" id="3_vfr6v"]
+[ext_resource type="Texture2D" uid="uid://ba8fr37pbt7sa" path="res://assets/overlay/overlay3.png" id="4_wipss"]
+[ext_resource type="PackedScene" uid="uid://biegmpkfmod42" path="res://scenes/map/valley.tscn" id="5_ly2dj"]
+[ext_resource type="FontFile" uid="uid://rhqxy3iowxy" path="res://assets/fonts/ComicNeue-Regular.ttf" id="6_fj8rs"]
+[ext_resource type="PackedScene" uid="uid://d2itjnurg1eiu" path="res://scenes/menu/settings.tscn" id="7_kl5ck"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bh2ab"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_fxrjb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vfr6v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wipss")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="Animation" id="Animation_s0pg2"]
+resource_name = "EndTransition"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_e1qia"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_6vxfb"]
+resource_name = "StartTransition"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ubc3g"]
+_data = {
+"EndTransition": SubResource("Animation_s0pg2"),
+"RESET": SubResource("Animation_e1qia"),
+"StartTransition": SubResource("Animation_6vxfb")
+}
+
+[sub_resource type="Theme" id="Theme_nbrt8"]
+default_font = ExtResource("6_fj8rs")
+default_font_size = 22
+RichTextLabel/colors/font_outline_color = Color(0, 0, 0, 1)
+RichTextLabel/constants/outline_size = 5
+
+[node name="Game" type="Node3D"]
+script = ExtResource("1_66dk3")
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+process_mode = 3
+stream = ExtResource("1_qyfpa")
+volume_db = -13.0
+autoplay = true
+
+[node name="Overlay" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.0392157)
+z_index = 1000
+position = Vector2(187, 115)
+scale = Vector2(1.28075, 1.02972)
+sprite_frames = SubResource("SpriteFrames_bh2ab")
+
+[node name="Transition" type="ColorRect" parent="."]
+modulate = Color(0, 0, 0, 1)
+z_index = 4096
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(9.84, 5.8)
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Transition"]
+libraries = {
+"": SubResource("AnimationLibrary_ubc3g")
+}
+
+[node name="TutorialText" type="RichTextLabel" parent="."]
+z_as_relative = false
+offset_right = 384.0
+offset_bottom = 222.0
+theme = SubResource("Theme_nbrt8")
+bbcode_enabled = true
+text = "tutorial_move"
+
+[node name="Settings" parent="." instance=ExtResource("7_kl5ck")]
+visible = false
+z_index = 4096
+offset_left = 48.0
+offset_top = 22.0
+offset_right = -336.0
+offset_bottom = -202.0
+scale = Vector2(0.736428, 0.736428)
+
+[node name="Map" parent="." instance=ExtResource("5_ly2dj")]
+
+[connection signal="finished" from="Music" to="." method="_on_music_finished"]
+[connection signal="animation_finished" from="Transition/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

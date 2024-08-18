@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://dngcnxpu113w6"]
+
+[ext_resource type="Script" path="res://scenes/char/player.gd" id="1_hmhs8"]
+[ext_resource type="SpriteFrames" uid="uid://dun81gy12f2qo" path="res://assets/char/cutscene/cutscene_animations.tres" id="2_hqlwa"]
+[ext_resource type="Theme" uid="uid://dlyebq5j7c1uc" path="res://assets/themes/subtitles.tres" id="4_2byiv"]
+[ext_resource type="Script" path="res://scenes/char/cutscene.gd" id="4_4w2nh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ihk3p"]
+size = Vector3(0.381104, 2.11353, 0.414062)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5swa1"]
+size = Vector3(1.34668, 1.75562, 1.66309)
+
+[sub_resource type="AudioStreamWAV" id="AudioStreamWAV_rfefk"]
+stereo = true
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_hmhs8")
+
+[node name="Camera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.641166, 0)
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_ihk3p")
+
+[node name="InteractionArea" type="Area3D" parent="." groups=["player_interact"]]
+
+[node name="Interact" type="CollisionShape3D" parent="InteractionArea"]
+shape = SubResource("BoxShape3D_5swa1")
+
+[node name="Cutscene" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(192, 112)
+sprite_frames = ExtResource("2_hqlwa")
+animation = &"catisserie_stand"
+frame = 1
+frame_progress = 0.301568
+script = ExtResource("4_4w2nh")
+
+[node name="Subtitles" type="RichTextLabel" parent="Cutscene"]
+texture_filter = 1
+offset_left = -191.0
+offset_top = 42.0
+offset_right = 192.0
+offset_bottom = 306.0
+theme = ExtResource("4_2byiv")
+bbcode_enabled = true
+text = "[center][NO AVAILABLE SUBTITLES] "
+
+[node name="Audio" type="AudioStreamPlayer2D" parent="Cutscene"]
+stream = SubResource("AudioStreamWAV_rfefk")
+
+[connection signal="area_entered" from="InteractionArea" to="." method="_on_interaction_area_area_entered"]
+[connection signal="area_exited" from="InteractionArea" to="." method="_on_interaction_area_area_exited"]
+[connection signal="finished" from="Cutscene/Audio" to="Cutscene" method="_on_audio_finished"]

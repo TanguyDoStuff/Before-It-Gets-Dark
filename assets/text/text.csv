@@ -1,0 +1,70 @@
+key,fr,en
+tutorial_move,"[center]Pour bouger, appuyez sur les boutons ZQSD.","[center]To move, press the WASD keys."
+tutorial_camera,"[center]Pour bouger la caméra, appuyez sur les touches fléchées.","[center]To move the camera, press the arrow keys."
+tutorial_jump,"[center]Pour sauter, appuyez sur la barre d'espace.","[center]To jump, press the space bar."
+,,
+cutscene_catisserie_1,"[center]Bonsoir toi ! Tu as perdu quelque chose ? Tu as besoin d'informations ?","[center]Good evening you! Did you lose something? Do you need any informations?"
+cutscene_catisserie_2,"[center]Nonon, je viens escalader la montagne.","[center]Nonono, I come to climb the mountain."
+cutscene_catisserie_3,"[center]À cette heure-ci ? Tu sais qu'il va bientôt faire [color=red]sombre[/color], non ?","[center]At this time? You know it's going to get [color=red]dark[/color], right?"
+cutscene_catisserie_4,"[center]Oui ! C'est pour cela que je monte la montagne.","[center]Yes! That's why I'm climbing the mountain."
+cutscene_catisserie_5,"[center]Eh bien, vas-y. Mais tu sais bien que tu ne pourras pas échapper aux [color=red]ténèbres[/color] éternellement.","[center]Well, you can go. But you know well that you cannot escape the [color=red]darkness[/color] forever."
+,,
+cutscene_nerdy_1,"[center]Wowowowow! Tu vas ou comme ça ?","[center]Wowowowow! Where are you going?"
+cutscene_nerdy_2,"[center]En haut de la montagne !","[center]At the top of the mountain!"
+cutscene_nerdy_3,"[center]Comme ça ? Sans équipement d'escalade ? SANS EAU ? Il faut s'hydrater, tu sais ? JE SAIS ! On va jouer à un petit jeu !","[center]Like that? Without any hiking gear? WITHOUT WATER? You need to hydrate you know? I KNOW! We're going to play a little game!"
+cutscene_nerdy_4,"[center].... J'ai pas le temps pour ça.","[center]...I don't have the time for that."
+cutscene_nerdy_5,"[center]On va jouer aux échecs ! Si tu gagnes, je te file ma corde qui va te permettre de monter en haut. Si tu perds, tu.... Uh... Je sais pas.","[center]We're going to play chess! If you win, I'm giving you my rope, which would let you continue. If you lose, you.... Uh.... I didn't think that far."
+cutscene_nerdy_6,"[center]JE N'AI PAS LE TEMPS DE JOUER !","[center]I DON'T HAVE THE TIME TO PLAY!"
+cutscene_nerdy_7,"[center]C'est parti !","[center]Let's go!"
+cutscene_nerdy_8,"[center]JE NE SAIS PAS JOUER AUX ÉCHECS !","[center]I DO NOT KNOW HOW TO PLAY CHESS!"
+,,
+cutscene_nerdy_postchess_1,"[center]Uh.... Je ne sais pas jouer aux échecs.","[center]Uh... I don't know how to play chess."
+cutscene_nerdy_postchess_2,[center]....,[center]....
+cutscene_nerdy_postchess_3,[center]....,[center]....
+cutscene_nerdy_postchess_4,[center]....,[center]....
+cutscene_nerdy_postchess_5,"[center]Félicitations ! Vous avez gagné ! Cadeau voilà la corde !","[center]Congrats! You won! Here's the rope!"
+,,
+cutscene_duck_1,"[center]Bonjour Monsieur Canard !!!","[center]Hello Mister Duck!!!"
+cutscene_duck_2,"[center]Bonjour ! Pour continuer, il faut ouvrir la porte !","[center]Hello! To continue, you must open the door!"
+cutscene_duck_3,"[center]Comment est-ce qu'on ouvre la porte ?","[center]How do we open the door?"
+cutscene_duck_4,"[center]Il faut la clé ! Elle est là-bas ! J'espère que tu sais sauter !","[center]You need the key! It is over here! I hope you know how to jump!"
+cutscene_duck_5,"[center]... Génial...","[center]... Awesome..."
+,,
+cutscene_duck_postkey_1,"[center]Tu as la clé ! Génial ! Mon travail ici est fini, ma planète a besoin de moi.","[center]You got the key! Awesome! My work here is done, my planet needs me."
+cutscene_duck_postkey_2,[center]boom,[center]boom
+,,
+cutscene_door_transition,cinematique_transition_porte,cutscene_door_transition
+,,
+cutscene_ermit1_1,"[center][color=red]Mon ami, que fais-tu ici ?","[center][color=red]My friend, what are you doing here?"
+cutscene_ermit1_2,"[center]Je viens escalader la montagne avant qu'il fasse [color=red]sombre !","[center]I am climbing the mountain before it gets [color=red]dark!"
+cutscene_ermit1_3,"[center][color=red]Monter une montagne n'est pas une chose facile, surtout pour des fins si... Inutile.","[center][color=red]Hiking a mountain is not easy, mostly for such.... Useless purposes."
+cutscene_ermit1_4,"[center][color=red]Vous ne pouvez pas échapper aux ténèbres, les voilà qu'ils arrivent déjà rapidement.","[center][color=red]You cannot escape the darkness, here it is, growing quickly."
+cutscene_ermit1_5,"[center]Raison de plus pour me dépêcher...","[center]That's why I really should hurry..."
+cutscene_ermit1_6,"[center][color=red]Veux-tu réellement continuer à courir, échapper notre destin à tous ?","[center][color=red]Do you really want to keep running away from our destiny?"
+cutscene_ermit1_7,"[center]Euh... Oui ?","[center]Uhm... Yes?"
+cutscene_ermit1_8,"[center][color=red]Continue tout droit, la sortie se trouve là-bas. Je suis un ermite, mais je dois quand même aller au supermarché parfois.","[center][color=red]Go ahead, the exit is over there. I am an hermit, but I still have to go to the store sometimes."
+,,
+cutscene_ermit2_1,"[center][color=red]Mon ami, bien que je ne comprends pas ce que tu essaies de faire, c'était un plaisir de voir un visage pour une dernière fo̵̫̟͌ḭ̷͖̚s̴̡͚̾  .̴̪͖̉̋ ̴̰̬̑̏â̸̼̥a̸̖͖͂̎a̴̯̋A̷̤̳̓͘A̶̡̔͂A̴̛̮͇͑ ̸̛̳Ä̸̮́̊ ̵͌͜À̴̹̤Ắ̶̩A̵̤̓̌A̶͈̳͋ ̶̻̀͝Ą̵͝A̵̰̽A̷̲̽ ̶̲̎͌ ̴͇͈̆A̶͔͕̽̇A̵̗̼̐Ȃ̶͎͗A̶͓̎́͜ ̴̦͋Ā̷͖̳Ȁ̶̤̑ ̴͕̞̀ ̷͖͖̋Á̴̤ͅÄ̸̦́̓Ă̴̠ ̴̢̰̈́A̵͚͓̒́","[center][color=red]My friend, I don't understand what you are doing, but it was a pleasure to see a face for a very last ti̶̼̅ḿ̴̳e̶̛̲.̴̹̌ ̷̡̌a̴̰͝a̷̳̒a̷̫͆Ã̵͖Ḁ̶̄A̴̭̓ ̷̮̃A̶̺͝ ̷̣̋A̸̤͛A̵̮͆Ă̶̤A̸̳̚ ̸̳̐A̵̘̿A̸͈͌Ḁ̴͂ ̵̙͑ ̸̻̑A̵̛͇A̷͖̚A̵̺͗A̷̘͝ ̴̬̎A̷͓͐Ä̶̻ ̷͓͛ ̷̲́A̵̗̚A̴̫̓A̸̟͊ ̵̦̚A̵̼͝"
+,,
+cutscene_witch_1,"[center]Nyehehehe... Bienvenue à mon supermarché en haut de la montagne ! Es-tu venu faire tes dernières courses avant--","[center]Nyehehehe... Welcome to the store of the mountain top! Did you came do your last shopping before--"
+cutscene_witch_2,"[center]Oh et puis zut, à quoi bon, je sais que tu est venu juste pour te réfugier.","[center]Oh, what the heck, what's the point, I know you only came to take refuge."
+cutscene_witch_3,"[center]Exact !",[center]Exact!
+cutscene_witch_4,"[center]Bon, eh bien, on devrait se dépêcher alors, les [color=red]ténèbres[/color] sont très proches.","[center]Welp, we need to hurry then, the [color=red]darkness[/color] is coming."
+cutscene_witch_5,"[center]Allons vite au point le plus haut ! Suis moi !","[center]Let's quickly go to the highest point! Follow me!"
+cutscene_witch_6,[center][magie],[center][magic]
+,,
+cutscene_end_1,[center]...,[center]...
+cutscene_end_2,[center]...,[center]...
+cutscene_end_3,"[center]Bon, eh bien, j'ai escaladé la montagne avant qu'il fasse [color=red]sombre.","[center]Well, I climbed to the top of the mountain before it got [color=red]dark."
+,,
+title_play,Jouer,Play
+title_settings,Options,Settings
+,,
+settings_musicvolume,Volume,Volume
+settings_screentype,"Mode d'écran","Screen mode"
+settings_screen_windowed,Fenêtré,Windowed
+settings_screen_fullscreen,"Plein écran",Fullscreen
+settings_language,Langue,Language
+settings_language_french,Français,French
+settings_language_english,Anglais,English
+settings_back,Retour,Back

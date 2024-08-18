@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=3 uid="uid://dlyybdhliyyj0"]
+
+[ext_resource type="Script" path="res://scenes/menu/main_menu.gd" id="1_14htp"]
+[ext_resource type="Texture2D" uid="uid://dhxq8i5fmgw8f" path="res://assets/titlescreenbg.png" id="2_agnmc"]
+[ext_resource type="AudioStream" uid="uid://bdi5mxfnsfcnq" path="res://assets/music/title_intro.mp3" id="2_b0oah"]
+[ext_resource type="Texture2D" uid="uid://bja8yykhsetl3" path="res://assets/logo.png" id="2_qx3bm"]
+[ext_resource type="PackedScene" uid="uid://d2itjnurg1eiu" path="res://scenes/menu/settings.tscn" id="5_6pl1e"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_o57lf"]
+line_spacing = -5.0
+font_size = 11
+
+[node name="MainMenu" type="Node2D"]
+position = Vector2(192, 112)
+script = ExtResource("1_14htp")
+
+[node name="BackgroundImage" type="Sprite2D" parent="."]
+texture = ExtResource("2_agnmc")
+
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(0, -65)
+scale = Vector2(0.0465702, 0.0465702)
+texture = ExtResource("2_qx3bm")
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_b0oah")
+autoplay = true
+
+[node name="PlayButton" type="Button" parent="."]
+offset_left = -183.0
+offset_top = 36.0
+offset_right = -105.0
+offset_bottom = 67.0
+text = "title_play"
+
+[node name="SettingsButton" type="Button" parent="."]
+offset_left = -182.0
+offset_top = 72.0
+offset_right = -75.0
+offset_bottom = 103.0
+text = "title_settings"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 87.0
+offset_top = 85.0
+offset_right = 230.0
+offset_bottom = 134.0
+text = "indev 0.2.72
+not for the public!!"
+label_settings = SubResource("LabelSettings_o57lf")
+
+[node name="Settings" parent="." instance=ExtResource("5_6pl1e")]
+visible = false
+offset_left = -51.0
+offset_top = -12.0
+offset_right = -51.0
+offset_bottom = -12.0
+scale = Vector2(0.605652, 0.605652)
+
+[connection signal="finished" from="Music" to="." method="_on_music_finished"]
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]

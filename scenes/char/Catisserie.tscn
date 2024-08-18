@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dahcx5syhha0g"]
+
+[ext_resource type="Texture2D" uid="uid://gv7b7g0m2l4w" path="res://assets/char/overworld/Catisserie/Catisserie1.png" id="1_4cmic"]
+[ext_resource type="Texture2D" uid="uid://d0fdqkpv0c12b" path="res://assets/char/overworld/Catisserie/Catisserie2.png" id="2_or1kn"]
+[ext_resource type="Script" path="res://scenes/char/npc.gd" id="3_tlfoh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ue4yb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4cmic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_or1kn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Catisserie" type="AnimatedSprite3D"]
+billboard = 2
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_ue4yb")
+script = ExtResource("3_tlfoh")
